@@ -55,9 +55,9 @@ To set up the project on your local machine, follow these steps:
 3. **Save the File**: Save the `README.md` file.
 
 ## Already hosted(live view):
-'''sh
+
 https://amazon-sentiment-analysis-review-web-app.onrender.com/
-'''
+
 
 ## Usage
 To run the web application, use the following command:
