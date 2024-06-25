@@ -28,16 +28,16 @@ To set up the project on your local machine, follow these steps:
     pip install -r requirements.txt
     ```
 ## Templates
--The HTML templates use Bootstrap for styling and responsiveness. The main templates are:
+- The HTML templates use Bootstrap for styling and responsiveness. The main templates are:
 
--index.html: The home page where users can input their reviews.
--result.html: The results page displaying the sentiment analysis and pie chart.
+- index.html: The home page where users can input their reviews.
+- result.html: The results page displaying the sentiment analysis and pie chart.
 
 ## License
--This project is licensed under the MIT License. See the LICENSE file for more details.
+- This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Acknowledgements
--This project uses the following open-source libraries:
+- This project uses the following open-source libraries:
 
 -Flask
 -pandas
@@ -66,7 +66,7 @@ amazon-reviews-sentiment-analysis/
 ├── templates/
 │   ├── index.html
 │   └── result.html
-└── static/
+
 
 
 
