@@ -1,6 +1,6 @@
 # Amazon Reviews Sentiment Analysis Web App
 
-![Logo](static/logos.png)
+![Logo](logos.png)
 
 ## Introduction
 This project is a web application for performing sentiment analysis on Amazon reviews. It uses the NLTK library's VADER sentiment analysis tool to classify reviews as positive, negative, or neutral, and provides a visual representation of the sentiment distribution.
@@ -27,12 +27,38 @@ To set up the project on your local machine, follow these steps:
     ```sh
     pip install -r requirements.txt
     ```
+## Templates
+-The HTML templates use Bootstrap for styling and responsiveness. The main templates are:
+
+-index.html: The home page where users can input their reviews.
+-result.html: The results page displaying the sentiment analysis and pie chart.
+
+## License
+-This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Acknowledgements
+-This project uses the following open-source libraries:
+
+-Flask
+-pandas
+-numpy
+-matplotlib
+-seaborn
+-nltk
+-markdown
+-Copy code
+
+### Instructions
+
+1. **Create the README File**: Create a file named `README.md` in your project directory.
+2. **Add the Content**: Copy and paste the Markdown content provided above into the `README.md` file.
+3. **Save the File**: Save the `README.md` file.
 
 ## Usage
 To run the web application, use the following command:
 ```sh
 python app.py
-'''
+
 
 amazon-reviews-sentiment-analysis/
 │
@@ -43,34 +69,5 @@ amazon-reviews-sentiment-analysis/
 └── static/
 
 
-## Templates
-The HTML templates use Bootstrap for styling and responsiveness. The main templates are:
-
-index.html: The home page where users can input their reviews.
-result.html: The results page displaying the sentiment analysis and pie chart.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-## Acknowledgements
-This project uses the following open-source libraries:
-
-Flask
-pandas
-numpy
-matplotlib
-seaborn
-nltk
-markdown
-Copy code
-
-### Instructions
-
-1. **Create the README File**: Create a file named `README.md` in your project directory.
-2. **Add the Content**: Copy and paste the Markdown content provided above into the `README.md` file.
-3. **Save the File**: Save the `README.md` file.
-
-### Adding a Logo Image
-If you want to include a logo at the beginning, ensure the image file (e.g., `logo.png`) is located in the `static` directory. The Markdown for the image is:
 
 
