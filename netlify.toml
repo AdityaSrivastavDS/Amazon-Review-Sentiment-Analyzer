@@ -1,0 +1,12 @@
+[build]
+  publish = "dist"
+  command = "cd frontend && npm run build"
+
+[build.environment]
+  PYTHON_VERSION = "3.8"
+
+[dev]
+  command = "python app.py"
+
+[functions]
+  directory = "netlify/functions"
