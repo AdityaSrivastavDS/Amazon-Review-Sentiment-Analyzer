@@ -56,7 +56,7 @@ To set up the project on your local machine, follow these steps:
 
 ## Already hosted(live view):
 
-https://amazon-sentiment-analysis-review-web-app.onrender.com/
+https://amazon-review-sentiment-analyzer-production.up.railway.app/
 
 
 ## Usage
