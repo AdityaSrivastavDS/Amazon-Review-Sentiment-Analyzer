@@ -15,7 +15,7 @@ To set up the project on your local machine, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/amazon-reviews-sentiment-analysis.git
+    git clone https://github.com/AdityaSrivastavDS/Amazon-Review-Sentiment-Analyzer
     ```
 
 2. Navigate to the project directory:
@@ -56,7 +56,7 @@ To set up the project on your local machine, follow these steps:
 
 ## Already hosted(live view):
 
-https://amazon-review-sentiment-analyzer-production.up.railway.app/
+https://amazon-review-sentiment-analyzer-web-app.onrender.com/
 
 
 ## Usage
