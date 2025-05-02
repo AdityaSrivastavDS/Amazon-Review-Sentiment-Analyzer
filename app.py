@@ -18,6 +18,7 @@ def home():
 @app.route('/analyze', methods=['POST'])
 def analyze():
     if request.method == 'POST':
+        print("Review Recieved")
         text = request.form['text']
         scores = sia.polarity_scores(text)
         

@@ -6,14 +6,109 @@
     <title>Amazon Reviews Sentiment Analysis</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      body {
-        background-color: #f8f9fa;
+      :root {
+        --primary-color: #6c5ce7;
+        --secondary-color: #a29bfe;
+        --dark-bg: #1a1a1a;
+        --card-bg: #2d2d2d;
+        --text-color: #ffffff;
+        --input-bg: #3d3d3d;
       }
+
+      body {
+        background-color: var(--dark-bg);
+        color: var(--text-color);
+        min-height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
       .container {
         margin-top: 50px;
+        perspective: 1000px;
       }
+
+      .card {
+        background-color: var(--card-bg);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-10px) rotateX(5deg);
+      }
+
+      .card-header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        border-radius: 15px 15px 0 0 !important;
+        padding: 2rem;
+      }
+
+      .card-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-body {
+        padding: 2rem;
+      }
+
       .form-group textarea {
         resize: none;
+        background-color: var(--input-bg);
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        color: var(--text-color);
+        padding: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .form-group textarea:focus {
+        box-shadow: 0 0 15px var(--primary-color);
+        transform: translateY(-2px);
+      }
+
+      .form-group label {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        border: none;
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(108, 92, 231, 0.6);
+      }
+
+      .btn-primary:active {
+        transform: translateY(1px);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .card {
+        animation: fadeIn 0.8s ease-out;
       }
     </style>
   </head>
@@ -25,12 +120,10 @@
         </div>
         <div class="card-body">
           <form action="/analyze" method="post">
-            <div class="form-group">
-              <label for="reviewText">Enter your review:</label>
-              <textarea id="reviewText" name="text" class="form-control" rows="5" required></textarea>
-            </div>
+            <label for="reviewText">Enter your review:</label>
+            <textarea id="reviewText" name="text" class="form-control" rows="5" required></textarea>
             <button type="submit" class="btn btn-primary">Analyze Sentiment</button>
-          </form>
+        </form>
         </div>
       </div>
     </div>
