@@ -1,6 +1,6 @@
 # Amazon Reviews Sentiment Analysis Web App
 
-![Logo](logos.png)
+![Logo](resources/logos.png)
 
 ## Introduction
 This project is a web application for performing sentiment analysis on Amazon reviews. It uses the NLTK library's VADER sentiment analysis tool to classify reviews as positive, negative, or neutral, and provides a visual representation of the sentiment distribution.
